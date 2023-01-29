@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>MOVIE GENRE GUESSER</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<style>
+    .vertical-center {
+        margin: 0;
+        position: center;
+        top: 70%;
+        color: rgb(0, 0, 0);
+    }
+</style>
+
+</head>
+
+<body>
+    <div class='container'>
+        <div class='jumbotron'>
+            <h1><a href='/'>MOVIE GENRE GUESSER</a></h1>
+        </div>
+    </div>
+    <div class='vertical-center'>
+        {% if prediction==0 %}
+        <h1>GENRE: THRILLER</h1>
+        {% elif prediction==1 %}
+        <h1>GENRE: COMEDY</h1>
+        {% elif prediction==2 %}
+        <h1>GENRE: DRAMA</h1>
+        {% elif prediction==3 %}
+        <h1>GENRE: ACTION</h1>
+        {% elif prediction==4 %}
+        <h1>GENRE: SCI-FI</h1>
+        {% elif prediction==5 %}
+        <h1>GENRE: OTHER</h1>
+        {% elif prediction==6 %}
+        <h1>GENRE: ROMANCE</h1>
+        {% elif prediction==7 %}
+        <h1>GENRE: HORROR</h1>
+        {% elif prediction==8 %}
+        <h1>GENRE: ADVENTURE</h1>
+        {% endif %}
+
+    </div>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title> MOVIE GENRE GUESSER</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <style>
+        body {
+            background-color: #f9faf9;
+        }
+
+        .registerbtn {
+            background-color: #515f52;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            opacity: 0.9;
+            justify-content: center;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        .vertical.center {
+            margin: 0;
+            position: center;
+            top: 70%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .col-sm-4 {
+
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .form-group {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-control {
+            justify-content: center;
+            align-items: center;
+            width: 75%;
+        }
+    </style>
+
+    <head>
+
+    <body>
+        <div class='container'>
+            <div class="jumbotron">
+                <h1><a href='/'> MOVIE GENRE GUESSER</h1></a>
+                <p> Enter a movie title and we will guess the genre!</p>
+            </div>
+        </div>
+        <div class='vertical-center'>
+            <form action='/predict' method='POST'>
+                <div class='container'>
+                    <!-- <div class='row'>
+
+                    </div> -->
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <div class='form-group'>
+                                <label for='plot'> Movie Plot: </label>
+                                <textarea class='form-control' id='plot' name='plot' rows='10'></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <div class='form-group'>
+                                <button type='submit' class='registerbtn'> Predict </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</head>
+</body>
+
+</html>
