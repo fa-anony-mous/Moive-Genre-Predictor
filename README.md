@@ -1,2 +1,2 @@
 # MOVIE GENRE GUESSER
- It guesses the genre of the movie based on its plot
+ A web app which uses GNB and NLP to predict the genre from the plot given by the user.
